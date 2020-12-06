@@ -1,0 +1,29 @@
+.wrapper__login {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+.login {
+  display: grid;
+  place-items: center;
+  max-width: 450px;
+  margin: 0 auto;
+
+  background-color: black;
+}
+
+.login__div__logo {
+  width: 100%;
+
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.login > a {
+  padding: 20px;
+  border-radius: 99px;
+  background-color: #1db954;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+}

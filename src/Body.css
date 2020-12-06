@@ -1,0 +1,118 @@
+.body {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background-color: rgb(91, 87, 115);
+  background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 0.9));
+
+  overflow-y: overlay;
+
+  padding: 20px 30px 30px 30px;
+}
+
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.body__info {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.body__div__img {
+  width: 192px;
+  min-width: 192px;
+  height: 192px;
+
+  margin-right: 24px;
+}
+
+.body__img {
+  width: 100%;
+  object-fit: contain;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.body__info__text {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+}
+
+.body__info__text_playlist {
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 4px;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+
+.body__info__text > span {
+  margin-top: 4px;
+  word-break: break-word;
+  overflow: hidden;
+  width: 100%;
+  text-align: left;
+}
+
+.body__info__text__discover {
+  padding: 0.08em 0px;
+  font-size: 72px;
+  line-height: 72px;
+  visibility: visible;
+
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.body__info__text > p {
+  color: hsla(0, 0%, 100%, 0.7);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+.body__songs {
+  margin: 20px -30px;
+}
+.body__icons {
+  display: flex;
+  align-items: center;
+}
+
+.body__icons > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+
+.body__shuffle {
+  font-size: 80px !important;
+  margin: 20px 0px 20px 50px;
+}
+
+.body__shuffle:hover {
+  transition: transform 100ms ease-in;
+  transform: scale(1.08);
+}
+
+@media only screen and (max-width: 836px) {
+  .body__info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .body__info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .body__info__text__discover {
+    padding: 0.08em 0px;
+    font-size: 36px;
+    line-height: 36px;
+    visibility: visible;
+
+    font-weight: 700;
+    letter-spacing: -0.04em;
+  }
+}
